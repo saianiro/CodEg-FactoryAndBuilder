@@ -1,4 +1,5 @@
 import player.*;
+import player.qualification.Qualification;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,8 +9,8 @@ public class Game {
 
   Scanner input = new Scanner(System.in);
   PlayerFactory factory = new PlayerFactory();
-  Player character;
   ArrayList<Qualification> qualifications = new ArrayList<>(List.of(Qualification.values()));
+  Player character;
 
   public Game() {
     generateCharacter();

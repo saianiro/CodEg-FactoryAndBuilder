@@ -1,4 +1,4 @@
-package player;
+package player.qualification;
 
 public enum Qualification {
 

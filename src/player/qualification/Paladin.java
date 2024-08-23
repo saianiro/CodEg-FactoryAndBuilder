@@ -4,8 +4,8 @@ import player.*;
 
 public class Paladin extends Player {
 
-  public Paladin(String name) {
-    super(name);
+  public Paladin(PlayerBuilder playerBuilder) {
+    super(playerBuilder);
     this.qualification = Qualification.PAL;
   }
 }

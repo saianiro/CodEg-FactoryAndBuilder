@@ -1,5 +1,7 @@
 package player;
 
+import player.qualification.Qualification;
+
 public abstract class Player {
 
   protected String name;
@@ -11,8 +13,14 @@ public abstract class Player {
   protected int wisdom;
   protected int charisma;
 
-  public Player(String name) {
-    this.name = name;
+  public Player(PlayerBuilder playerBuilder) {
+    this.name = playerBuilder.getName();
+    this.strength = playerBuilder.getStrength();
+    this.dexterity = playerBuilder.getDexterity();
+    this.constitution = playerBuilder.getConstitution();
+    this.intelligence = playerBuilder.getIntelligence();
+    this.wisdom = playerBuilder.getWisdom();
+    this.charisma = playerBuilder.getCharisma();
   }
 
   @Override
