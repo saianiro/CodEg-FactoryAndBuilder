@@ -6,7 +6,7 @@ Il pattern **Factory** è un design pattern creazionale che prevede l'implementa
 
 In questo esempio, la classe `PlayerFactory` gestisce la creazione di oggetti di tipo `Player` attraverso il metodo `createPlayer`.
 
-Il metodo `createPlayer` richiama, in base alla scelta dell'utente, i metodi `createWizard`, `createPaladin` e `createRogue` i quali, sfruttando il pattern **Builder** per la valorizzazione degli attributi, invocano il costruttore di una delle sottoclassi di Player - `Wizard`, `Paladin`, `Rogue`.
+Il metodo `createPlayer` richiama, in base alla scelta dell'utente, i metodi `createWizard`, `createPaladin` e `createRogue` i quali, sfruttando il pattern **Builder** per la valorizzazione degli attributi (con valori di default oppure scelti dall'utente) invocano il costruttore di una delle sottoclassi di Player - `Wizard`, `Paladin`, `Rogue`. 
 
 * La classe astratta `Player` permette di sfruttare il polimorfismo: ogni oggetto di tipo `Player` verrà istanziato dal costruttore di una delle classi concrete che la implementano: `Wizard`, `Paladin`, `Rogue`.
 
